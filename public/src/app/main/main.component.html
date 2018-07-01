@@ -1,0 +1,17 @@
+<div class="container-fluid" id="background">
+    <div class="container-fluid" id="foreground">
+        <p>Welcome, {{User}}</p>
+        <div class="room_header">
+            <h2>Lobby</h2>
+            <button type="button" class="btn btn-primary" (click)="join(User)">Create Session</button>
+            <hr>
+            <h3>Open Sessions</h3>
+        </div>
+        <div class="row">
+            <div class="card col-2" *ngFor="let room of keys" [hidden]="OpenRooms[room].length >= 2">
+                <!-- <h4>{{room}}</h4> -->
+                <button type="button" id="room_button" class="btn btn-outline-primary" (click)="joinByClick(room)">{{room}}</button>
+            </div>
+        </div>
+    </div>
+</div>

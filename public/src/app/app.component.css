@@ -1,0 +1,36 @@
+.navbar {
+    background-color: #ececfc;
+    padding: 5px;
+    /* border-bottom: 1px solid #b173e4; */
+    padding-left: 2%;
+    height: 85px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #647486;
+    z-index: +1;
+}
+
+#navbarSupportedContent {
+    width: 60%;
+    margin-right: 5em;
+    /* margin-left: 670px; */
+}
+
+.navbar-nav {
+    justify-content: right;
+    float: right;
+    right: 15px;
+}
+
+.navbar-brand {
+    color: #9e54b4;
+    /* font-family: 'Monoton', cursive; */
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#logo {
+    height: 70px;
+    margin-bottom: 1%;
+}

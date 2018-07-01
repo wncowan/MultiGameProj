@@ -1,0 +1,16 @@
+<div class="container-fluid" id="background">
+    <div class="container-fluid" id="foreground">
+        <p>Welcome, {{User}}</p>
+        <div class="room_header">
+            <h2>Games</h2>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="card col-2">
+                <!-- <h4>{{room}}</h4> -->
+                <h3>Tic Tac Toe</h3>
+                <button type="button" id="game_button" class="btn btn-outline-primary" (click)="join(User)">Open a new session</button>
+            </div>
+        </div>
+    </div>
+</div>

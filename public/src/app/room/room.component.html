@@ -1,0 +1,53 @@
+<div class="container-fluid" id="background">
+    <div class="container-fluid" id="foreground">
+        <p>Welcome, {{ User }}</p>
+        <h2>Room Name: {{ Room }}</h2>
+        <!-- <button *ngIf="!RoomJoin" type="button" class="btn btn-primary" (click)="leave()" id="leave">leave room</button> -->
+        <button type="button" class="btn btn-primary" (click)="leave()" id="leave">leave room</button>
+        <div class="row">
+            <div class="dialog-window col-6">
+                <div class="messages">
+                    <div *ngFor="let item of messageArray" id="message">
+                    <span><strong>{{item.user}}: </strong> {{item.message}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 text-center">
+                <h3 style="padding-bottom: 10px">tic tac toe</h3>
+                <table>
+                    <tr>
+                        <td id="1" (click)="move(1)">{{board[1]}}</td>
+                        <td id="2" (click)="move(2)">{{board[2]}}</td>
+                        <td id="4" (click)="move(4)">{{board[4]}}</td>
+                    </tr>
+                    <tr>
+                        <td id="8" (click)="move(8)">{{board[8]}}</td>
+                        <td id="16" (click)="move(16)">{{board[16]}}</td>
+                        <td id="32" (click)="move(32)">{{board[32]}}</td>
+                    </tr>
+                    <tr>
+                        <td id="64" (click)="move(64)">{{board[64]}}</td>
+                        <td id="128" (click)="move(128)">{{board[128]}}</td>
+                        <td id="256" (click)="move(256)">{{board[256]}}</td>
+                    </tr>
+                </table>
+                <h3 *ngIf="board['Turn']">Player Turn: {{board['Turn']}}</h3>
+                <div *ngIf="board['Winner']">
+                    <h3>Winner is: {{winner}}</h3>
+                    <button class="btn btn-primary" (click)="resetBoard()">Reset</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button id="button1" (click)="buttonClick($event)" [disabled]="state.onePushed">Button 1</button>
+            <button id="button2" (click)="buttonClick($event)" [disabled]="state.twoPushed">Button 2</button>
+        </div>
+        <div id="message_input">
+            <form (ngSubmit)="sendMessage()">
+                <input id="input" type="text" class="form-control" [(ngModel)]="messageText" placeholder="Enter message" name="message-text">
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        <!-- <button type="button" class="btn btn-success pull-right" [(routerLink)]="['room/' + ]" -->
+        </div>
+    </div>
+</div>

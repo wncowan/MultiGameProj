@@ -1,0 +1,28 @@
+<div class="container-fluid" id="background">
+    <div class="container-fluid" id="foreground">
+        <p>Welcome, {{User}}</p>
+        <div class="room_header">
+            <h2>Global Scoreboard</h2>
+            <hr>
+        </div>
+        <div class="scoreboard">
+            <table class="table">
+                <thead>
+                    <th scope="col">Rank</th>
+                    <th scope="col">Username</th>
+                    <th scope="col"><button (click)='Pullusers()' class="btn btn-outline-primary btn-sm">Wins</button></th>
+                    <th scope="col"><button (click)='sortbyPercent()' class="btn btn-outline-primary btn-sm">Win %</button></th>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let user of UserList'>
+                        <td></td>
+                        <td>{{user.username}}</td>
+                        <td>{{user.wins}}</td>
+                        <td *ngIf="user.wins / user.played; else empty">{{user.KD}}%</td>
+                        <ng-template #empty><td>0</td></ng-template>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

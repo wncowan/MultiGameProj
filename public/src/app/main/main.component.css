@@ -1,0 +1,78 @@
+#background {
+    /* height: 800px; */
+    height: 100vh;
+    width: 95vw;
+    overflow: hidden;
+}
+
+#foreground {
+    padding: 20px;
+    width: 100%;
+    height: 80%;
+    margin-top: 10%;
+    /* border-radius: 5px; */
+    /* #ececfc */
+    background-color: #ececfc27;
+    position: relative;
+}
+/* #ececfc */
+
+.room_header {
+    width: 100%;
+}
+
+.room_header h2 {
+    display: inline-block;
+}
+.room_header button {
+    /* display: inline-block; */
+    float: right;
+}
+
+h2 {
+    display: inline-block;
+    color: #ececfc;
+}
+
+h3 {
+    display: inline-block;
+    color: #ececfc;
+}
+
+p {
+    color: #ececfc;
+}
+
+.rooms_list {
+    overflow: scroll;
+}
+
+.card {
+    background-color: #ececfc27;
+    height: 100px;
+    width: 70px;
+    color: #ececfc;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+#room_button {
+    height: 100px;
+    border: none;
+}
+
+#room_button:hover {
+    color: #007bff;
+    background-color: #ececfc27;
+}
+
+/* .btn-outline-primary:hover {
+    color: #007bff;
+    background-color: #ececfc27;
+}
+
+.btn-outline-primary:hover {
+    color: #007bff;
+    background-color: #ececfc27;
+} */

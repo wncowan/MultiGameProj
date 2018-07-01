@@ -1,0 +1,50 @@
+.container-fluid {
+    /* height: 800px; */
+    height: 110vh;
+    width: 95vw;
+    overflow: hidden;
+}
+
+.container {
+    /* border: 1px solid gray; */
+    padding: 20px;
+    width: 550px;
+    height: 550px;
+    margin-top: 10%;
+    /* -webkit-box-shadow: 10px 10px 11px 1px rgba(187,187,201,1);
+    -moz-box-shadow: 10px 10px 11px 1px rgba(187,187,201,1);
+    box-shadow: 10px 10px 11px 1px rgba(187,187,201,1); */
+    background-color: #ececfc;
+    position: relative;
+}
+
+.reg {
+    display: inline-block;
+    width: 230px;
+    position: absolute;
+    left: 20px;
+}
+
+.login {
+    display: inline-block;
+    width: 230px;
+    position: absolute;
+    right: 20px;
+}
+
+h1 {
+    color: #292f36;
+}
+
+.error_window {
+    height: 50px;
+    color: red;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
