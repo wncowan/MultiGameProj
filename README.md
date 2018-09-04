@@ -6,6 +6,7 @@ Alex Lebowitz
 Cole Anderson
 Nash Fisher
 Tom Garcia
+Wesley Cowan
 
 Features Include: 
 Global scoreboard
